@@ -23,6 +23,16 @@ namespace sikokan
         public ImportPanel()
         {
             InitializeComponent();
+            FileSelectMenus fileSelectkun=new FileSelectMenus();
+            fileSelectkun.Text = "tintin";
+            fileSelectkun.TitlePic = "";
+            fileSelectkun.clicked += (sender, eventargs)=>{
+                MessageBox.Show("ちんちん");
+            };
+        }
+
+        private void Grid_MouseDown(object sender, MouseButtonEventArgs e)
+        {
         }
     }
 }
